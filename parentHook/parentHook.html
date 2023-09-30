@@ -1,0 +1,8 @@
+<template>
+    <lightning-card   title="Lifecycle Hooks" icon-name="standard:account">
+        <lightning-input type="checkbox" label="Invoke Child" placeholder="type here..." onchange={handleChange}></lightning-input>
+        <template lwc:if={displayChild}>
+            <c-child-hook></c-child-hook>
+        </template>
+    </lightning-card>
+</template>
